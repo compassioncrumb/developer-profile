@@ -23,8 +23,8 @@ var cardinals = {
     skills: ["ajax", "jqeury", "javascript"]
   },
   delta: {
-    title: "Person Profile",
-    summary: "utilizes the wikipedia api to fetch search results and tastefully display them",
+    title: "Public Profile",
+    summary: "stylized profile page for a speaker or public figure",
     screenshot: "./screenshot_size/dennet_300x190.png",
     url: "https://compassioncrumb.github.io/front-end-composition-1/",
     skills: ["jqeury", "javascript", "scss"]
@@ -45,7 +45,7 @@ var cardinals = {
   },
   iota: {
     title: "Library Catalog", 
-    summary: "back-end and form based library catalog site, with library management functions",
+    summary: "back-end and form based library catalog site, with content management functions",
     screenshot: "./screenshot_size/library_300x190.png", 
     url: "https://townlibrary.herokuapp.com/catalog/book/create",
     skills: ["node", "pug/jade", "javascript"]
@@ -72,7 +72,7 @@ for (var item in cardinals) {
   
   $(".display").append(
   `<div class='project-container'>
-    <a href="${project.url}"><h2>${project.title}</h2></a>
+    <a href="${project.url}"><h2>${project.title.toUpperCase()}</h2></a>
     <div class='project-detail'>
       <a href="${project.url}">
         <img src=${project.screenshot}>
@@ -82,7 +82,7 @@ for (var item in cardinals) {
       </div>
       <div class='project-summary'>
         <div class="summary-inner">
-          <h3>Summary</h3>
+          <h3></h3>
           <div class='summary'>${project.summary}</div>
         </div>
       </div>
