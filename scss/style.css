@@ -6,17 +6,38 @@ body * {
   padding-top: 10px;
   font-family: 'Rubik', sans-serif; }
 
-h1 {
+header {
   width: 1000px;
-  text-align: left;
-  background-color: white;
   margin: auto;
+  padding: 0px;
+  border-bottom: teal solid 3px; }
+
+header::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+h1 {
+  float: left;
   padding: 50px 0px 10px 0px;
-  border-bottom: teal solid 3px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 62px;
   color: teal; }
+
+nav {
+  display: inline-block;
+  float: right;
+  padding: 50px 0px 10px 0px;
+  text-align: right; }
+  nav ul {
+    list-style: none; }
+    nav ul a {
+      color: teal;
+      text-decoration: none; }
+
+.display {
+  clear: both; }
 
 .project-container {
   width: 800px;
